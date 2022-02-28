@@ -32,5 +32,5 @@ button.menu-object:hover:not(:active){
 
 @font-face {
     font-family: 'MrsEavesPetiteCaps'; /*a name to be used later*/
-    src: url('./fonts/MrsEavesPetiteCaps_PetiteCaps.ttf'); /*URL to font*/
+    src: url('../fonts/MrsEavesPetiteCaps_PetiteCaps.ttf'); /*URL to font*/
 }
