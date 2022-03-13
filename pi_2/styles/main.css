@@ -1,22 +1,74 @@
-#title{
-	font-size: 26px;
-	line-height: 75px;
+body {
+    background-color: #F4F0E7;
+}
+.container {
+    display: grid;
+	grid-template-columns: 1fr auto auto 1fr;
+	grid-template-areas:
+		"title title title title"
+		". start start ."
+		". options exit .";
+	gap: 10px;
+
+}
+.containerGame {
+    display: grid;
+	grid-template-columns: auto auto auto auto;
+	align-items: right;
+	gap: 10px;
+
 }
 
+#title{
+	width: auto;
+    font-family: 'Luminari';
+	font-size: 72px;
+	border:0ch;
+    text-transform:capitalize;
+    font-variant:small-caps;
+    font-weight:bold;
+	grid-area: title;
+}
+
+#start{
+	font-size: 36px;
+	width: 100%;
+	grid-area: start;
+}
+#options{
+	grid-area: options;
+}
+#exit{
+	grid-area: exit;
+}
+#GoToMenu{
+	text-align: center;
+	padding-top: 20px;
+	border: 0px;
+	width: auto;
+	height: auto;
+}
 .menu-object{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
 	height: 75px;
-	font-size: 16px;
-	margin-top: 10px;
-}
+    font-family: 'MrsEavesPetiteCaps';
+	font-size: 26px;
+	color: rgb(88,23,13);
+	border: 3px solid rgb(88,23,13);
 
+}
+.carta{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
 p{
 	text-align: center;
 }
-
 button.menu-object:active{
 	font-size: 18px;
 	width: 275px;
@@ -24,8 +76,18 @@ button.menu-object:active{
 }
 
 button.menu-object:hover:not(:active){
-	font-size: 22px;
+	font-size: 32px;
+	font-weight: bold;
 	width: 325px;
 	height: 85px;
 }
 
+@font-face {
+    font-family: 'MrsEavesPetiteCaps'; /*a name to be used later*/
+    src: url('../../fonts/MrsEavesPetiteCaps_PetiteCaps.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Luminari'; /*a name to be used later*/
+    src: url('../../fonts/Luminari-Regular.ttf'); /*URL to font*/
+}

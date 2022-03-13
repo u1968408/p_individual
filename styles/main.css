@@ -2,10 +2,14 @@ body {
     background-color: #F4F0E7;
 }
 #title{
-    font-family: 'MrsEavesPetiteCaps';
-	font-size: 52px;
-    color: rgb(88,23,13);
-	line-height: 75px;
+	width: auto;
+    font-family: 'Luminari';
+	font-size: 72px;
+	line-height: 100px;
+	border:0ch;
+    text-transform:capitalize;
+    font-variant:small-caps;
+    font-weight:bold;
 }
 
 .menu-object{
@@ -14,9 +18,11 @@ body {
 	margin-right: auto;
 	width: 300px;
 	height: 75px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 16px;
+    font-family: 'MrsEavesPetiteCaps';
+	font-size: 26px;
+	color: rgb(88,23,13);
 	margin-top: 10px;
+	border: 3px solid rgb(88,23,13);
 }
 
 p{
@@ -30,7 +36,8 @@ button.menu-object:active{
 }
 
 button.menu-object:hover:not(:active){
-	font-size: 22px;
+	font-size: 32px;
+	font-weight: bold;
 	width: 325px;
 	height: 85px;
 }
@@ -38,4 +45,9 @@ button.menu-object:hover:not(:active){
 @font-face {
     font-family: 'MrsEavesPetiteCaps'; /*a name to be used later*/
     src: url('../fonts/MrsEavesPetiteCaps_PetiteCaps.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Luminari'; /*a name to be used later*/
+    src: url('../fonts/Luminari-Regular.ttf'); /*URL to font*/
 }
