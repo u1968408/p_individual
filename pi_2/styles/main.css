@@ -4,7 +4,6 @@ body {
 .container {
     display: grid;
 	grid-template-columns: 1fr auto auto 1fr;
-
 	grid-template-areas:
 		"title title title title"
 		". start start ."
@@ -57,13 +56,21 @@ body {
 	border: 3px solid rgb(88,23,13);
 
 }
-/* .carta{
-	span: 1;
-} */
+.carta{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
 p{
 	text-align: center;
 }
-
+a{
+	text-align: center;
+	border: 0px !important;
+	width: auto !important;
+	height: auto !important;
+}
 button.menu-object:active{
 	font-size: 18px;
 	width: 275px;
