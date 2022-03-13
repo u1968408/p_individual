@@ -43,6 +43,10 @@ body {
 }
 #GoToMenu{
 	text-align: center;
+	padding-top: 20px;
+	border: 0px;
+	width: auto;
+	height: auto;
 }
 .menu-object{
 	display:block;
@@ -64,12 +68,6 @@ body {
 }
 p{
 	text-align: center;
-}
-a{
-	text-align: center;
-	border: 0px !important;
-	width: auto !important;
-	height: auto !important;
 }
 button.menu-object:active{
 	font-size: 18px;
