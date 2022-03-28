@@ -6,6 +6,8 @@ body {
 	font-size: 52px;
     color: rgb(88,23,13);
 	line-height: 75px;
+	width: auto;
+	background-color: rgba(0, 0,0,0);
 }
 
 .menu-object{
@@ -14,9 +16,11 @@ body {
 	margin-right: auto;
 	width: 300px;
 	height: 75px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 16px;
+    font-family:'BookmanOldStyle-Bold';
+	font-size: 22px;
 	margin-top: 10px;
+	border-radius: 10px;
+	background-color: #E3E5BD;
 }
 
 p{
@@ -38,4 +42,8 @@ button.menu-object:hover:not(:active){
 @font-face {
     font-family: 'MrsEavesPetiteCaps'; /*a name to be used later*/
     src: url('../fonts/MrsEavesPetiteCaps_PetiteCaps.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'BookmanOldStyle-Bold'; /*a name to be used later*/
+    src: url('../fonts/BookmanOldStyle-Bold.ttf'); /*URL to font*/
 }
