@@ -1,18 +1,18 @@
 <!DOCTYPE html> 
 <html>
 	<head>
-		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/options.css">
 		<script src="../js/loader.js"></script>
 		<title> My first game - Options </title>
 	</head>
 	<body>
 		<div id="options_id">
 			<p class="menu-object" id="title">Options menú</p>
-			<div class="menu-object">
+			<div class="menu-object" id="cardsnumber">
 				<label for="labelnumber">Number of cards:</label>
 				<input type="number" id="labelnumber" v-model="num">
 			</div>
-			<div class="menu-object">
+			<div class="menu-object" id="difficulty">
 				<p>Dificulty:</p>
 				<input type="radio" id="easy" value="easy" v-model="dificulty" checked>
 				<label for="easy">Easy</label>
@@ -20,10 +20,11 @@
 				<label for="normal">Normal</label>
 				<input type="radio" id="hard" value="hard" v-model="dificulty" >
 				<label for="hard">Hard</label>
-			</div>
+			</div> 
 			<button class="menu-object" v-on:click="save"> Save </button>
 			<button class="menu-object" v-on:click="discard"> Discard </button>
 		</div>
+		
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 	<script src="../js/options.js"></script>

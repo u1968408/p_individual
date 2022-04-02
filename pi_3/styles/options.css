@@ -1,0 +1,66 @@
+input[type=number]{
+	height: 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 3rem;
+    text-align: center;
+}
+
+body {
+    background-color: #F4F0E7;
+}
+
+#title{
+	width: auto;
+    font-family: 'Luminari';
+	font-size: 56px;
+	border:0ch;
+    text-transform:capitalize;
+    font-variant:small-caps;
+    font-weight:bold;
+	grid-area: title;
+}
+
+.menu-object{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+    width: 300px;
+	height: 90px;
+    font-family: 'MrsEavesPetiteCaps';
+	font-size: 26px;
+    color: rgb(88,23,13);
+
+}
+
+p{
+	text-align: center;
+}
+
+button {
+    border: 3px solid rgb(88,23,13);
+}
+
+button.menu-object:active{
+	font-size: 18px;
+	width: 275px;
+	height: 70px;
+}
+
+button.menu-object:hover:not(:active){
+	font-size: 32px;
+	font-weight: bold;
+	width: 325px;
+	height: 85px;
+}
+
+@font-face {
+    font-family: 'MrsEavesPetiteCaps'; /*a name to be used later*/
+    src: url('../../fonts/MrsEavesPetiteCaps_PetiteCaps.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Luminari'; /*a name to be used later*/
+    src: url('../../fonts/Luminari-Regular.ttf'); /*URL to font*/
+}

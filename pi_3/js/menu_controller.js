@@ -11,6 +11,7 @@ function exit (){
 		alert("Leaving " + name + "'s game");
 	}
 	name = "";
+	loadpage("../")
 }
 
 function options(){
