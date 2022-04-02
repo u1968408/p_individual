@@ -6,8 +6,8 @@
 		<title> My first game - Game </title>
 	</head>
 	<body>
-		<p class="menu-object" id="title">Memory game</p>
 		<div id="game_id">
+			<p class="menu-object" id="title">Is playing {{username}}</p>
 			<p class="menu-object" id="title" v-if="score_text <= 0"> You Lose </p>
 			<p class="menu-object" id="title" v-else-if="num_cards <= 0">
 				You WIN!!! with {{score_text}} points
