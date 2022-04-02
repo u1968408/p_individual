@@ -15,6 +15,16 @@ input[type=radio]{
 body {
     background-color: #F4F0E7;
 }
+
+img {
+	margin: 10px;
+	text-align: center;
+	width: auto;
+}
+#game_id {
+	width: auto;
+	text-align:center;
+}
 .container {
     display: grid;
 	grid-template-columns: 1fr auto auto 1fr;
