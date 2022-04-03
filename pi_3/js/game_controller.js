@@ -12,6 +12,7 @@ var game = new Vue({
 		items: [],
 		difficulty: options_data.dificulty,
 		num_cards: options_data.cards,
+		num_cards_total: num_cards,
 		bad_clicks: 0
 	},
 	created: function(){
@@ -99,8 +100,8 @@ var game = new Vue({
 	computed: {
 		score_text: function(){
 			//Link calcul dificultat: https://www.geogebra.org/classic/vw3yqucd
-			let punts = 100 * this.numDif - this.bad_clicks * (10 * this.numDif + Math.pow(1.83, 2 * this.numDif)) ;
-			console.log("Dificultat ", this.numDif, ": ",100 * this.numDif, " - ", this.bad_clicks * (10 * this.numDif + Math.pow(1.83, 2 * this.numDif)),": " ,punts);
+			let punts = 100 * this.numDif * this.num_cards_total - this.bad_clicks * (10 * this.numDif * this.num_cards_total + Math.pow(1.83, 2 * this.numDif)) ;
+			console.log("Dificultat ", this.numDif, ": ",100 * this.numDif * this.num_cards_total, " - ", this.bad_clicks * (10 * this.numDif * this.num_cards_total + Math.pow(1.83, 2 * this.numDif)),": " ,punts);
 			return punts;
 		}
 	}
