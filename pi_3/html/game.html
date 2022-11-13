@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="../styles/main.css">
@@ -12,9 +12,7 @@
 			<p class="menu-object" id="title" v-else-if="num_cards <= 0">
 				You WIN!!! with {{score_text}} points
 			</p>
-			
 			<img v-else v-for="(card, indx) in current_card" :src="card.texture" v-on:click="clickCard(indx)">
-			
 		</div>
 		<a class="menu-object" href="../">GoToMenu</a>
 	</body>
