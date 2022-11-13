@@ -12,7 +12,6 @@ var game = new Vue({
 		items: [],
 		difficulty: options_data.dificulty,
 		num_cards: options_data.cards,
-		num_cards_total: num_cards,
 		bad_clicks: 0
 	},
 	created: function(){
